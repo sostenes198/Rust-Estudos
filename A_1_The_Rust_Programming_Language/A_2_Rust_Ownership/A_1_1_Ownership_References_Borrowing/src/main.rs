@@ -42,6 +42,8 @@ fn main() {
 
     let r3 = &mut s; // no problem
     println!("{r3}");
+
+    // let reference_to_nothing = dangle();
 }
 
 fn takes_ownership(some_string: String) {
@@ -72,3 +74,9 @@ fn calculate_length(s: &String) -> usize {
 fn change(some_string: &mut String) {
     some_string.push_str(", world!");
 }
+
+// fn dangle() -> &String {
+//     let s = String::from("hello");
+//
+//     &s
+// }
