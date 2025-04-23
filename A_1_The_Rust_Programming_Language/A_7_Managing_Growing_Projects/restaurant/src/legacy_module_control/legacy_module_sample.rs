@@ -1,0 +1,1 @@
+pub fn legacy_module_control() {}

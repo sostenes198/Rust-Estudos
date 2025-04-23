@@ -1,0 +1,1 @@
+pub mod legacy_module_sample;

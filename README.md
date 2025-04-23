@@ -11,7 +11,8 @@ and building those libraries. (We call the libraries that your code needs depend
 
 1. `cargo --version` (Show cargo version)
 2. `cargo doc --open` (command will build documentation provided by all your dependencies locally and open it in your browser.)
-3. `cargo new` {{PROJECT_NAME}} (Create a new directory and project using cargo)
+3. `cargo new` {{PROJECT_NAME}} Create a new binary project using cargo
+3. `cargo new {{PROJECT_NAME}} --lib ` }} Create a new lib project using cargo
 4. `cargo check` (Check your coe to make ure it compiles successfully)
 5. `cargo build` (Build entire project)
 6. `cargo build --release` (Build entire project with optimizations)
@@ -19,6 +20,7 @@ and building those libraries. (We call the libraries that your code needs depend
 8. `cargo add` {{PACKAGE_NAME}} (Add dependencies from a Cargo.toml manifest file)
 9. `cargo remove` {{PACKAGE_NAME}} (Remove dependencies from a Cargo.toml manifest file)
 10. `cargo update` (Update packages inside fix version: example 0.1.1 -> 0.1.9, to change minor and major version, you need to change manually version in Cargo.toml)
+11. `RUST_BACKTRACE=1 cargo run` Execute rust more details about error handler
 
 ---
 # Prelude

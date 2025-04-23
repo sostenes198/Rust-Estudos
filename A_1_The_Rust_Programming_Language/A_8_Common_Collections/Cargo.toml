@@ -1,0 +1,6 @@
+[package]
+name = "A_8_Common_Collections"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
