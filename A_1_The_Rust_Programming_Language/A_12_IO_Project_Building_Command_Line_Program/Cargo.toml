@@ -1,0 +1,10 @@
+[package]
+name = "A_12_IO_Project_Building_Command_Line_Program"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+mockall = "0.13.1"
+
+[dev-dependencies]
+tempfile = "3.19.1"

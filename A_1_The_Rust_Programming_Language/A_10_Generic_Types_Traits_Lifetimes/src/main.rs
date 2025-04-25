@@ -3,6 +3,7 @@ mod generic_sample;
 mod trait_sample;
 mod where_clauses_sample;
 mod trait_sample_2;
+mod lifetime_sample;
 
 // use largest_number_sample::*;
 use trait_sample::*;
