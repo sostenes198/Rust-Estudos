@@ -1,0 +1,8 @@
+[package]
+name = "A_2_1_Estudos_Kafka"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+kafka = "0.10.0"
+openssl = "0.10.73"
