@@ -1,0 +1,10 @@
+[package]
+name = "loops_and_prints_cpu_sample"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "cpu"
+path = "src/main.rs"
+
+[dependencies]

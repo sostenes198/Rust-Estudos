@@ -111,12 +111,38 @@ Crate is a collection of Rust source code files. The project we’ve been buildi
 Location where cargo credentials are stored: `~/.cargo/credentials.`<br>
 File name: `credentials.toml`
 
----
-# Comandos úteis `rustc`
+--- 
+# Rust toolchain
 
-> `rustup show`  Show the active and installed toolchains or profiles
+No contexto do Rust, toolchain é o conjunto de ferramentas necessárias para compilar, testar e executar código Rust.
+
+Ou seja, um toolchain inclui:
+
+* **rustup** → gerencia versões do Rust, instala e troca toolchains e componentes.
+
+* **rustc** → o compilador Rust
+
+* **cargo** → o gerenciador de pacotes e builds
+
+* **rust-std** → a biblioteca padrão (std)
+
+* **rustdoc** → ferramenta para gerar documentação
+
+* E eventualmente outros componentes como clippy, rustfmt, etc.
+
+## Tipos de tollchains
+![rust_tolchain_types.png](imgs/rust_tolchain_types.png)
+
+---
+## Comandos úteis `rustc`
 
 > `rustc --version` (Show current rust version)
+ 
+> `rustc {{FILE_MAIN.rs}}` (Build .exe in windows)
+
+## Comandos úteis `rustup`
+
+> `rustup show`  Show the active and installed toolchains or profiles
 
 > `rustup update` (Update rust)
  
@@ -138,9 +164,7 @@ File name: `credentials.toml`
 
 > `rustup component list --installed` Show all installed components like rustfmt, clippy, etc.. 
 
-> `rustup component list ` Show all available components like rustfmt, clippy, etc.. 
-
-> `rustc {{FILE_MAIN.rs}}` (Build .exe in windows)
+> `rustup component list ` Show all available components like rustfmt, clippy, etc..
 
 ![rustup_show_all_installed.png](./imgs/rustup_show_all_installed.png)
 

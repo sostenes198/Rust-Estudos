@@ -13,7 +13,7 @@ pub fn produce() -> kafka::Result<()> {
         .with_compression(Compression::GZIP)
         .with_connection_idle_timeout(Duration::from_secs(30))
         .create()?;
-    
+
     producer.send(&mut Record::from_value("my-topic", "test-value"))?;
     producer.send(&mut Record::from_value("my-topic", "test-value-1"))?;
     producer.send(&mut Record::from_value("my-topic", "test-value-2"))?;

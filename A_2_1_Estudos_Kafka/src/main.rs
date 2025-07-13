@@ -1,5 +1,5 @@
-mod kafka_producer;
 mod kafka_consumer;
+mod kafka_producer;
 
 fn main() {
     // kafka_producer::produce().unwrap();
